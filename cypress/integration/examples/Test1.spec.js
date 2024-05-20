@@ -38,7 +38,7 @@ it('My First Test case', function(){
         cy.log(logoelement.text())
     })
     
-    const fText = cy.get('footer>p').then(function(footertexts){
+    cy.get('footer>p').then(function(footertexts){
         cy.log(footertexts.text())
     })
 

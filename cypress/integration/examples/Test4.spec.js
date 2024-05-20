@@ -20,7 +20,7 @@ it('Alert Control-1',function()
 
 it('Alert Control-2',function()
 {
-    cy.visit("https://rahulshettyacademy.com/AutomationPractice/")
+    cy.visit(Cypress.env('url')+"AutomationPractice/")
     cy.get('input#name').type('Pankaj Shinde')
     cy.get('#confirmbtn').click()
     cy.on('window:alert',(str) =>

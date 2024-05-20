@@ -29,7 +29,7 @@ describe('My First Test suite', function()
 
 it.only('My Exercise',function()
 {
-    cy.visit("https://rahulshettyacademy.com/AutomationPractice/")
+    cy.visit(Cypress.env('url')+"AutomationPractice/")
     cy.get('#displayed-text').should('be.visible')
     cy.get('input[value="Hide"]').click()
     cy.get('#displayed-text').should('be.hidden')
